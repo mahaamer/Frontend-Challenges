@@ -1,0 +1,152 @@
+@font-face {
+    font-family: 'Outfit';
+    src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'YoungSerif';
+    src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+:root {
+    --title-color: #302d2c;
+    --subtitle-color: #854632;
+    --paragraph-color: #5f574e;
+
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+p, li, span {
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+    color: var(--paragraph-color);
+
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    font-family: 'YoungSerif', sans-serif;
+    font-weight: 400;
+
+}
+
+h1 {
+    color: var(--title-color);
+}
+
+h2 {
+
+    color: var(--subtitle-color);
+}
+
+div {
+    margin-top: 30px;
+}
+
+hr {
+    margin: 50px 10px;
+    color: var(--paragraph-color);
+}
+
+
+.container {
+    padding: 60px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+.header>img {
+    border-radius: 15px;
+    height: 70vh;
+}
+
+.preparationTime {
+    background-color: #fff5fa;
+    padding: 10px 30px;
+    border-radius: 15px;
+}
+
+.preparationTime>h3 {
+    font-family: 'Outfit', sans-serif;
+    color: #7b284f;
+
+}
+
+.time-list>li::marker {
+    color: #7b284f;
+}
+
+.time-label {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.ingredient-list>li::marker {
+    color: #854632;
+}
+
+.ingredient-label {
+    padding-left: 30px;
+}
+
+.instruction-list>li::marker {
+    color: #854632;
+    font-weight: 700;
+}
+
+.instruction-label {
+    padding-left: 15px;
+    font-weight: 700;
+
+}
+
+.nutrition-table {
+    display: flex;
+    flex-direction: column;
+}
+
+.nutrition-row {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    border-bottom: solid 1px #5f574e;
+
+}
+
+.header-table {
+    font-weight: 600;
+}
+
+.header-number {
+    color: #854632;
+    font-weight: 700;
+}
+
+@media (min-width:320px) and (max-width:767px) {
+    p, li, span {
+        font-size: 15px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .header>img {
+        height: 30vh;
+        border-radius: 0;
+    }
+
+    div {
+        margin-top: 00px;
+    }
+}
